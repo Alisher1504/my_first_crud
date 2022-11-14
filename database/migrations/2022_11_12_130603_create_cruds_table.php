@@ -29,6 +29,8 @@ return new class extends Migration
             $table->string('work');
             $table->string('message');
             $table->string('telegramlink');
+            $table->integer('user_id');
+
             $table->timestamps();
         });
 

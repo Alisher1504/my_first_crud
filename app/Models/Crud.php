@@ -26,6 +26,12 @@ class Crud extends Model
         'work',
         'message',
         'telegramlink',
+        'user_id',
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 
 }

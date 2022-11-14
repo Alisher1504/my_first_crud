@@ -32,6 +32,8 @@
                     <input type="text" name="courses" class="form-control my-3" placeholder="courses">
                     <input type="text" name="address" class="form-control" placeholder="address">
                     <input type="text" name="work" class="form-control my-3" placeholder="work">
+                    <input type="hidden" name="user_id" class="form-control my-3" value="{{ Auth::user()->id }}" placeholder="work">
+
                     <textarea class="form-control" name="message" id="" cols="75" rows="5" placeholder="message"></textarea>
                     <input type="text" name="telegramlink" class="form-control my-3" placeholder="telegramlink">
 

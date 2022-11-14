@@ -30,12 +30,14 @@
                         <td>
                             <a class="btn btn-info text-white" href="{{ url('/viewcrud', $key->id) }}">view</a>
                         </td>
+                        @if(Auth::user()->id == $key->user_id)
                         <td>
                             <a class="btn btn-primary" href="{{ url('/updatecrud', $key->id) }}">edit</a>
                         </td>
                         <td>
                             <a class="btn btn-danger" href="{{ url('/deletecrud', $key->id) }}">delete</a>
                         </td>
+                        @endif
                     </tr>
 
                     @endforeach
